@@ -20,112 +20,65 @@
     </div>
     <header>
       <span onclick="openNav()"></span>
-      <h2>Portfolio</h2>
-      <div>
-        <a target="_blank" href="https://github.com/AlexandrSchiwe"
-          ><img src="../img/github.png"
-        /></a>
-      </div>
+      <div></div>
     </header>
     <main>
-      <section class="gallery">
-        <div class="parent">
-          <div>
+      <section class="description">
+        <h2>Portfolio</h2>
+        <p>
+          Eine Sammlung meiner Lieblingsprojekte mit Link zur jeweiligen Seite
+          und dem Github Repo.
+        </p>
+      </section>
+      <section class="portfolio">
+        <article>
+          <button class="open-details california">California Calling</button>
+          <div class="details hidden">
+            <button class="close-details">&times;</button>
+            <p>California Calling</p>
+            <img src="/assets/img/california.png" alt="" />
+            <p>
+              Website um auf Waldbrände in Kalifornien aufmerksam zu machen. Im
+              Rahmen meines Coding Bootcamps bei Supercode entstanden.
+            </p>
+            <a
+              target="_blank"
+              href="https://alexandrschiwe.github.io/California_Calling/"
+              >Zur Seite</a
+            >
+            <a
+              target="_blank"
+              href="https://github.com/AlexandrSchiwe/California_Calling"
+              >Github Repo</a
+            >
+          </div>
+        </article>
+        <article>
+          <button class="open-details design-shop">Design Shop</button>
+          <div class="details detailsShop hidden">
+            <button class="close-shop close-details">&times;</button>
+            <p>The Design Shop</p>
             <img src="/assets/img/designShop.png" alt="Design Shop" />
-            <div class="infoCard">
-              <button>
-                <a
-                  target="_blank"
-                  href="https://alexandrschiwe.github.io/The-Design-Shop/"
-                  >The Design Shop</a
-                >
-              </button>
-            </div>
+            <p>
+              Website um auf Waldbrände in Kalifornien aufmerksam zu machen. Im
+              Rahmen meines Coding Bootcamps bei Supercode entstanden.
+            </p>
+            <a
+              target="_blank"
+              href="https://alexandrschiwe.github.io/California_Calling/"
+              >Zur Seite</a
+            >
+            <a
+              target="_blank"
+              href="https://github.com/AlexandrSchiwe/California_Calling"
+              >Github Repo</a
+            >
           </div>
-          <div>
-            <img src="/assets/img/california.png" alt="California Calling" />
-            <div class="infoCard">
-              <button>
-                <a
-                  target="_blank"
-                  href="https://alexandrschiwe.github.io/California_Calling/"
-                  >California Calling</a
-                >
-              </button>
-            </div>
-          </div>
-          <div>
-            <img src="/assets/img/designReview.png" alt="Design Website" />
-            <div class="infoCard">
-              <button>
-                <a
-                  target="_blank"
-                  href="https://alexandrschiwe.github.io/design_review/"
-                  >Design Review</a
-                >
-              </button>
-            </div>
-          </div>
-          <div>
-            <img src="/assets/img/mowee.png" alt="Movie Database Website" />
-            <div class="infoCard">
-              <button>
-                <a target="_blank" href="https://mowee.netlify.app/"
-                  >Mowee Database</a
-                >
-              </button>
-            </div>
-          </div>
-          <div>
-            <img src="/assets/img/roma.png" alt="Roma Website" />
-            <div class="infoCard">
-              <button>
-                <a target="_blank" href="https://alexandrschiwe.github.io/Roma/"
-                  >Roma</a
-                >
-              </button>
-            </div>
-          </div>
-          <div>
-            <img src="/assets/img/workResponsibly.png" alt="Work Responsibly" />
-            <div class="infoCard">
-              <button>
-                <a
-                  target="_blank"
-                  href="https://alexandrschiwe.github.io/day11_work_responsibly/"
-                  >Work Responsibly</a
-                >
-              </button>
-            </div>
-          </div>
-          <div>
-            <img src="/assets/img/illustration.png" alt="Illustration" />
-            <div class="infoCard">
-              <button>
-                <a
-                  target="_blank"
-                  href="https://alexandrschiwe.github.io/Illustration/"
-                  >Illustration</a
-                >
-              </button>
-            </div>
-          </div>
-          <div>
-            <img src="/assets/img/css_portfolio.png" alt="Portfolio" />
-            <div class="infoCard">
-              <button>
-                <a
-                  target="_blank"
-                  href="https://alexandrschiwe.github.io/css_portfolio/"
-                  >Portfolio</a
-                >
-              </button>
-            </div>
-          </div>
-        </div>
+        </article>
       </section>
     </main>
     <footer></footer>
+    <div class="blur hidden"></div>
     <script src="/assets/js/script.js"></script>
   </body>
 </html>

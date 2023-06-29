@@ -16,7 +16,10 @@
   padding: 0;
   box-sizing: border-box;
   font-family: mainFont;
-  color: white;
+}
+
+html {
+  font-size: 62.5%;
 }
 
 /* ============================================
@@ -96,48 +99,60 @@ header span {
 
 main {
   background-color: black;
-  padding: 5%;
+  padding: 5.5%;
+  height: 100vh;
+  display: flex;
+  justify-content: space-between;
+}
+
+.description {
   color: white;
 }
+/* =================================
+        Portfolio Section
+===================================*/
 
-.parent {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(4, 1fr);
-  grid-column-gap: 0px;
-  grid-row-gap: 10%;
-}
-
-.parent img {
-  height: 80%;
-  width: 100%;
-}
-
-.parent div {
-  height: auto;
-  width: 20vw;
-}
-
-.infoCard {
+.details {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 70%;
   text-align: center;
-  margin-top: 20px;
-}
-
-main section button {
-  padding: 10px;
-  background-color: #818181;
-  border: none;
+  background-color: white;
+  padding: 2.5rem;
   border-radius: 5px;
+  box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
+  z-index: 10;
 }
 
-main section button a {
-  text-decoration: none;
+.details img {
+  width: 90%;
+  height: auto;
 }
 
-main section button:hover {
-  background-color: #f1f1f1;
+.hidden {
+  display: none;
 }
 
-main section button a:hover {
-  color: rgba(0, 0, 0, 0.98);
+.close-details {
+  position: absolute;
+  top: 1.2rem;
+  right: 2rem;
+  font-size: 3.5rem;
+  color: #333;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+.blur {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(3px);
+  z-index: 5;
 }
